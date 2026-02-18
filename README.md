@@ -1,3 +1,5 @@
+# About
+We all know storing strings takes up a lot of space. But how bad is it really? In this simple project, we create two databases from the same API query, creating a summoners table containing ~300 records. In the database riot_data, raw json is stored, and in riot_data3, json is translated first into individual data types, resulting in a column for each item in the json response. Below are the outcomes.
 # Goals
 To show the difference between storing data as json (string) vs broken out into string, int, and boolean.
 
