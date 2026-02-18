@@ -1,5 +1,17 @@
-# Riot API Project Setup
+# Goals
+To show the difference between storing data as json (string) vs broken out into string, int, and boolean.
 
+# Performance Outcomes
+- a 24% reduction from 0.22mb to 0.06mb in database size
+
+## MySQL Script to Check Database size:
+```
+SELECT 
+    table_schema AS riot_data3,
+    ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS size_mb
+FROM information_schema.tables
+WHERE table_schema = 'riot_data3';
+```
 ## Prerequisites
 
 1.  **Python 3.11+**: Ensure Python is installed.
